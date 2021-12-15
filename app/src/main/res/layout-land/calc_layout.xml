@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="true"
@@ -27,7 +26,7 @@
     <Space
         android:id="@+id/space_top"
         android:layout_width="match_parent"
-        android:layout_height="360sp" />
+        android:layout_height="120sp" />
 
     <LinearLayout
         android:id="@+id/row1"
@@ -43,10 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5sp"
             android:layout_weight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:text="@string/_1"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
         <Button
@@ -56,10 +53,10 @@
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
             android:layout_weight="1"
-            android:clickable="true"
+            android:clickable="false"
             android:focusable="true"
             android:text="@string/_2"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
         <Button
@@ -68,10 +65,10 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="5sp"
             android:layout_weight="1"
-            android:clickable="true"
+            android:clickable="false"
             android:focusable="true"
             android:text="@string/_3"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
     </LinearLayout>
 
@@ -88,10 +85,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5sp"
             android:layout_weight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:text="@string/_4"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
         <Button
@@ -101,10 +96,8 @@
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
             android:layout_weight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:text="@string/_5"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
         <Button
@@ -113,10 +106,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="5sp"
             android:layout_weight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:text="@string/_6"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
     </LinearLayout>
 
@@ -133,10 +124,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5sp"
             android:layout_weight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:text="@string/_7"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
         <Button
@@ -145,11 +134,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_weight="1"
             android:text="@string/_8"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
         <Button
@@ -157,11 +144,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5sp"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_weight="1"
             android:text="@string/_9"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
     </LinearLayout>
 
@@ -178,11 +163,9 @@
             android:layout_height="match_parent"
             android:layout_marginStart="5sp"
             android:layout_marginEnd="5sp"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_weight="2"
             android:text="@string/_0"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
         <Button
@@ -191,11 +174,9 @@
             android:layout_height="match_parent"
             android:layout_marginStart="5sp"
             android:layout_marginEnd="5sp"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_weight="2"
             android:text="@string/_plus"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
         <Button
@@ -204,11 +185,9 @@
             android:layout_height="match_parent"
             android:layout_marginStart="5sp"
             android:layout_marginEnd="5sp"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_weight="2"
             android:text="@string/_minus"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
 
@@ -229,10 +208,8 @@
             android:layout_marginStart="5sp"
             android:layout_marginEnd="5sp"
             android:layout_weight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:text="@string/_dev"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
         <Button
@@ -242,10 +219,8 @@
             android:layout_marginStart="5sp"
             android:layout_marginEnd="5sp"
             android:layout_weight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:text="@string/_mult"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
         <Button
@@ -255,10 +230,8 @@
             android:layout_marginStart="5sp"
             android:layout_marginEnd="5sp"
             android:layout_weight="1"
-            android:clickable="true"
-            android:focusable="true"
             android:text="@string/_equls"
-            android:textSize="@dimen/ButtonSize"
+            android:textSize="@dimen/ButtonSizeLand"
             android:typeface="sans" />
 
 
