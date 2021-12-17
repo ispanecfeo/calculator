@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Calculator.GeekBrains">
+        <item name="android:layout_width">@dimen/layout_width_0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ButtonDefaultMargin</item>
+        <item name="android:layout_marginRight">@dimen/ButtonDefaultMargin</item>
+        <item name="android:layout_weight">@dimen/weight_1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">@dimen/ButtonSize</item>
+        <item name="android:typeface">sans</item>
+        <item name="rippleColor">@color/purple_700</item>
+
+    </style>
+
+    <style name="Theme.Calculator.LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

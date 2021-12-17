@@ -3,4 +3,15 @@
     <dimen name="ButtonSize">40sp</dimen>
     <dimen name="ButtonSizeLand">15sp</dimen>
     <dimen name="TextResultSize">45sp</dimen>
+    <dimen name="ButtonDefaultMargin">10sp</dimen>
+    <dimen name="ButtonDefaultMarginLand">5sp</dimen>
+    <dimen name="ButtonLeftRightMargin">5sp</dimen>
+    <dimen name="ButtonMarginTop_10">10sp</dimen>
+    <dimen name="layout_width_0">0dp</dimen>
+    <dimen name="weight_1">1</dimen>
+    <dimen name="weight_2">2</dimen>
+    <dimen name="weight_3">3</dimen>
+    <dimen name="space_layout_height">360sp</dimen>
+    <dimen name="land_space_layout">120sp</dimen>
+
 </resources>
