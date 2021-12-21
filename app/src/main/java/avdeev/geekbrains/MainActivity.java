@@ -2,6 +2,7 @@ package avdeev.geekbrains;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -16,6 +17,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calc_layout);
         initView();
+
+        Boolean darkThem = getIntent().getExtras().getBoolean(ChooseActivity.THEM);
+        if (darkThem) {
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        } else {
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
+
     }
 
     private void initView() {
@@ -116,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setResultText(String text) {
-        String currText = (String) ((TextView)findViewById(R.id.resultText)).getText();
-        ((TextView)findViewById(R.id.resultText)).setText(currText + text);
+        //String currText = (String) ((TextView)findViewById(R.id.resultText)).getText();
+        ((TextView)findViewById(R.id.resultText)).setText(storage.getResultText());
     }
 }

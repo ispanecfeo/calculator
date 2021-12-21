@@ -1,5 +1,6 @@
 package avdeev.geekbrains;
 
+import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -11,6 +12,7 @@ import java.util.stream.Collectors;
 public class CalculatorStorege implements Parcelable {
 
     private ArrayList<String> listMembers;
+    private int countOperators = 0;
 
     public CalculatorStorege() {
         listMembers = new ArrayList<>();
@@ -43,7 +45,57 @@ public class CalculatorStorege implements Parcelable {
     }
 
     public void addMember(String member) {
-        listMembers.add(member);
+
+        if (isOperator(member)) {
+            countOperators++;
+        }
+
+        if (member.equals("=") || countOperators == 2)  {
+
+            String p1 = "";
+            String p2 = "";
+            String operator = "";
+            boolean firstParametr = true;
+
+            for (String str: listMembers) {
+
+                if (isOperator(str)) {
+                    operator = str;
+                    firstParametr = false;
+                    continue;
+                }
+
+                if (firstParametr) {
+                    p1 += str;
+                } else {
+                    p2 += str;
+                }
+            }
+
+            String result = runСalculate(
+                    Integer.parseInt(p1),
+                    Integer.parseInt(p2),
+                    operator
+            );
+
+            if (!member.equals("=")) {
+                listMembers.add("=");
+            } else {
+                listMembers.add(member);
+            }
+
+            listMembers.add(result);
+            countOperators++;
+
+        } else if (countOperators == 3) {
+
+            listMembers.clear();
+            countOperators = 0;
+            listMembers.add(member);
+
+        } else {
+            listMembers.add(member);
+        }
     }
 
     public String getResultText() {
@@ -52,6 +104,38 @@ public class CalculatorStorege implements Parcelable {
             result += str;
         }
         return result;
+    }
+
+    private String runСalculate(int p1, int p2, String operation) {
+        int result = 0;
+        switch (operation) {
+            case "+" :  result = p1 + p2;
+                break;
+            case "-" :  result = p1 - p2;
+                break;
+            case "*" :  result = p1 * p2;
+                break;
+            case "/" :  result = p1 / p2;
+                break;
+            default:
+                break;
+        }
+        return  String.valueOf(result);
+
+    }
+
+    private boolean isOperator(String member) {
+        switch (member) {
+            case "+" :
+            case "-" :
+            case "*" :
+            case "/" :
+            case "=" :
+                return true;
+            default:
+                break;
+        }
+        return false;
     }
 
 }
