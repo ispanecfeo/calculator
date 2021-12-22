@@ -16,5 +16,10 @@
     <string name="_equls">=</string>
     <string name="_0">0</string>
     <string name="_point">.</string>
+    <string name="label_1">light theme</string>
+    <string name="label_2">dark theme</string>
+    <string name="page_title">Сhoose a theme for the calculator</string>
+    <string name="content_description_media">make your choice</string>
+    <string name="button_choice_text">choice</string>
 
 </resources>
